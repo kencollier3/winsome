@@ -1,30 +1,29 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import { RectButton,  FlatList } from 'react-native-gesture-handler';
-import { level2questions } from '../data/level2';
+import level2 from '../data/level2.json';
 
 export default function LinksScreen() {
-const [data, setData]  = useState([]);
-useEffect(() => {setData(level2questions)}, [])
-
-  return (
+  
+return (
       <FlatList
        style={styles.container} 
        contentContainerStyle={styles.contentContainer}
-        keyExtractor={(question, index) => index}
-        data={level2questions}
-        renderItem={({item, index}) => {
-          return (
-            <OptionButton
-                    icon="ios-chatboxes"
-                    label={`${index + 1}. ${item.question}`}
-                    onPress={() => WebBrowser.openBrowserAsync('https://forums.expo.io')}
-                    isLastOption
-            />
-          );
-        }}
+       data={level2}
+       showsVerticalScrollIndicator={false}
+       renderItem={({item, index}) => {   
+            return (
+              <OptionButton
+                      icon="ios-chatboxes"
+                      label={`${index + 1}. ${item.question}`}
+                      onPress={() => WebBrowser.openBrowserAsync('https://forums.expo.io')}
+                      isLastOption
+              />
+              );
+            }}
+            keyExtractor={(item, index) => index.toString()}
       >
       
       </FlatList>
