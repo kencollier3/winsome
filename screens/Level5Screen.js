@@ -3,15 +3,15 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import { RectButton,  FlatList } from 'react-native-gesture-handler';
-import level2 from '../data/level2.json';
+import level5 from '../data/level5.json';
 
-export default function LinksScreen() {
+export default function Level5Screen() {
   
 return (
       <FlatList
        style={styles.container} 
        contentContainerStyle={styles.contentContainer}
-       data={level2}
+       data={level5}
        showsVerticalScrollIndicator={false}
        renderItem={({item, index}) => {   
             return (
