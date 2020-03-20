@@ -23,7 +23,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={Level1Screen}
         options={{
           title: 'Level 1',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-menu" />,
         }}
       />
       <BottomTab.Screen
@@ -31,7 +31,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={Level2Screen}
         options={{
           title: 'Level 2',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-menu" />,
         }}
       />
       <BottomTab.Screen
@@ -39,7 +39,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={Level3Screen}
         options={{
           title: 'Level 3',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-menu" />,
         }}
       />
       <BottomTab.Screen
@@ -47,7 +47,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={Level4Screen}
         options={{
           title: 'Level 4',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-menu" />,
         }}
       />
       <BottomTab.Screen
@@ -55,7 +55,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={Level5Screen}
         options={{
           title: 'Level 5',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-menu" />,
         }}
       />
     </BottomTab.Navigator>
