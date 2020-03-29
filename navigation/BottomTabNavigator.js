@@ -66,9 +66,15 @@ function getHeaderTitle(route) {
   const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME;
 
   switch (routeName) {
-    case 'Home':
-      return 'How to get started';
-    case 'Links':
-      return 'Links to learn more';
+    case 'Level1':
+      return 'Level 1';
+    case 'Level2':
+      return 'Level 2';
+    case 'Level3':
+      return 'Level 3';
+    case 'Level4':
+      return 'Level 4';
+    case 'Level5':
+      return 'Level 5';
   }
 }
