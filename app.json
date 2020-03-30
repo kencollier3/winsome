@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Tab Navigation Template",
-    "slug": "winsome",
+    "name": "Five Levels",
+    "slug": "fivelevels",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -24,8 +24,15 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.appsolutelypositive.fivelevels",
+      "versionCode": 1
+    },
     "ios": {
+      "bundleIdentifier": "com.appsolutelypositive.fivelevels",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
-    }
+    },
+    "description": ""
   }
 }
